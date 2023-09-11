@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "AMi02B7RMV5k5JCk0G3Ge3DSUpT8Sln/izXg3kagJ8joAaZGoxI3kcjqv9FWXA+uo3orrOZ7t+280oV3JyAl/A==",
+  "success": true,
+  "projectFilePath": "D:\\Proga\\ОКС\\OKS_1\\OKS_1\\OKS_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nlog\\5.2.4\\nlog.5.2.4.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nlog.extensions.logging\\5.3.4\\nlog.extensions.logging.5.3.4.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.native.system.io.ports\\7.0.0\\runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.io.ports\\7.0.0\\system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

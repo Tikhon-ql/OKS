@@ -1,0 +1,789 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Logging/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Diagnostics.DiagnosticSource": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Options/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "NLog/5.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.3.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.2.4"
+        },
+        "compile": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          }
+        }
+      },
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          }
+        }
+      },
+      "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "7.0.0"
+        }
+      },
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          }
+        }
+      },
+      "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.IO.Ports/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/net7.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net7.0/System.IO.Ports.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+      "sha512": "qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/7.0.0": {
+      "sha512": "elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
+      "sha512": "h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging/6.0.0": {
+      "sha512": "eIbyj40QDg1NDz0HBW0S5f3wrLVnKWnDJ/JtZ+yJDFnDj90VoPuoPmFkeaXrtu+0cKm5GRAwoDf+dBWXK0TUdg==",
+      "type": "package",
+      "path": "microsoft.extensions.logging/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Logging.dll",
+        "lib/net461/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
+        "microsoft.extensions.logging.6.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "sha512": "/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "build/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Options/6.0.0": {
+      "sha512": "dzXN0+V1AyjOe2xcJ86Qbo233KHuLEY0njf/P2Kw8SfJU+d45HNS2ctJdnEnrWbM9Ye2eFgaC5Mj9otRMU6IsQ==",
+      "type": "package",
+      "path": "microsoft.extensions.options/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Options.dll",
+        "lib/net461/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.6.0.0.nupkg.sha512",
+        "microsoft.extensions.options.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/6.0.0": {
+      "sha512": "9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.Primitives.dll",
+        "lib/net461/Microsoft.Extensions.Primitives.xml",
+        "lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "lib/net6.0/Microsoft.Extensions.Primitives.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "NLog/5.2.4": {
+      "sha512": "/qzds1Cp9rQD53La3mlWOmCHsFSbmT9BCb8q6k3eOrbOYDfdf3ZN1hBW7IDImUD6V8BfPfEFBhXGDLOEOQxHgQ==",
+      "type": "package",
+      "path": "nlog/5.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.2.4.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Extensions.Logging/5.3.4": {
+      "sha512": "rxUGUqhE3DlcKfKhPJOI0xOt8q2+NX0NkBY9lbRXwZEYQsh8ASFS8X7K+Y7/dcE8v0tpAe7GF8rPD5h4h9Hpsg==",
+      "type": "package",
+      "path": "nlog.extensions.logging/5.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net461/NLog.Extensions.Logging.dll",
+        "lib/net461/NLog.Extensions.Logging.xml",
+        "lib/net6.0/NLog.Extensions.Logging.dll",
+        "lib/net6.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.3/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.3/NLog.Extensions.Logging.xml",
+        "lib/netstandard1.5/NLog.Extensions.Logging.dll",
+        "lib/netstandard1.5/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.0/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.0/NLog.Extensions.Logging.xml",
+        "lib/netstandard2.1/NLog.Extensions.Logging.dll",
+        "lib/netstandard2.1/NLog.Extensions.Logging.xml",
+        "nlog.extensions.logging.5.3.4.nupkg.sha512",
+        "nlog.extensions.logging.nuspec"
+      ]
+    },
+    "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "CBvgRaF+M0xGLDv2Geb/0v0LEADheH8aK72GRAUJdnqnJVsQO60ki1XO8M3keEhnjm+T5NvLm41pNXAVYAPiSg==",
+      "type": "package",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-arm.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "5VCyRCtCIYU8FR/W8oo7ouFuJ8tmAg9ddsuXhfCKZfZrbaVZSKxkmNBa6fxkfYPueD0jQfOvwFBmE5c6zalCSw==",
+      "type": "package",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "DV9dWDUs23OoZqMWl5IhLr3D+b9koDiSHQxFKdYgWnQbnthv8c/yDjrlrI8nMrDc71RAKCO8jlUojzuPMX04gg==",
+      "type": "package",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.linux-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "L4Ivegqc3B0Fee7VifFy2JST9nndm+uvJ0viLIZUaImDfnr+JmRin9Tbqd56KuMtm0eVxHpNOWZBPtKrA/1h5Q==",
+      "type": "package",
+      "path": "runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.native.system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "jFwh4sKSXZ7al5XrItEO4GdGWa6XNxvNx+LhEHjrSzOwawO1znwJ+Dy+VjnrkySX9Qi4bnHNLoiqOXbqMuka4g==",
+      "type": "package",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.osx-arm64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
+      "sha512": "X4LrHEfke/z9+z+iuVr35NlkhdZldY8JGNMYUN+sfPK/U/6TcE+vP44I0Yv0ir1v0bqIzq3v6Qdv1c1vmp8s4g==",
+      "type": "package",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+        "runtime.osx-x64.runtime.native.system.io.ports.nuspec",
+        "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/6.0.0": {
+      "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net461/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.IO.Ports/7.0.0": {
+      "sha512": "0nWQjM5IofaIGpvkifN+LLuYwBG6BHlpmphLhhOJepcW12G8qToGuNDRgBzeTVBZzp33wVsESSZ8hUOCfq+8QA==",
+      "type": "package",
+      "path": "system.io.ports/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Ports.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Ports.targets",
+        "lib/net462/System.IO.Ports.dll",
+        "lib/net462/System.IO.Ports.xml",
+        "lib/net6.0/System.IO.Ports.dll",
+        "lib/net6.0/System.IO.Ports.xml",
+        "lib/net7.0/System.IO.Ports.dll",
+        "lib/net7.0/System.IO.Ports.xml",
+        "lib/netstandard2.0/System.IO.Ports.dll",
+        "lib/netstandard2.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/unix/lib/net7.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net6.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net6.0/System.IO.Ports.xml",
+        "runtimes/win/lib/net7.0/System.IO.Ports.dll",
+        "runtimes/win/lib/net7.0/System.IO.Ports.xml",
+        "system.io.ports.7.0.0.nupkg.sha512",
+        "system.io.ports.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "Microsoft.Extensions.DependencyInjection >= 7.0.0",
+      "NLog.Extensions.Logging >= 5.3.4",
+      "System.IO.Ports >= 7.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Proga\\ОКС\\OKS_1\\OKS_1\\OKS_1.csproj",
+      "projectName": "OKS_1",
+      "projectPath": "D:\\Proga\\ОКС\\OKS_1\\OKS_1\\OKS_1.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Proga\\ОКС\\OKS_1\\OKS_1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "NLog.Extensions.Logging": {
+            "target": "Package",
+            "version": "[5.3.4, )"
+          },
+          "System.IO.Ports": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
